@@ -1,3 +1,11 @@
+/*
+The following is a javascript script, deployed as a Cloudflare Worker for the site https://darr.win/
+Cloudflare Worker is a service by Cloudflare to run serverless functions at the edge. 
+What it does is, append a new response header with the name of “Foo” and the value of “Bar”.
+After deployed and attached, one can right click within a browser to inspect updated header. You may see the attached picture "ResponseHeaderSnapshot.png".
+*/
+
+
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
