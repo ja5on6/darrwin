@@ -60,7 +60,7 @@
 				<details>
 					<summary>0. Planning<span class="icon">👇</span></summary>
 					<p class="subDetails">~ 2 hours</p>
-					<p>There is a saying in Chinese, 万事开头难, which roughly translates to everything is hard in the beginning, and it is the same for this project as well. With the minimalistic outline, I was scratching my head on where to begin. Sometimes it's important not to overthink and take things 1 step at a time, so here we go. </p>
+					<p>The outline given seem minimalistic, and there are quite a number of names I don't recognise. Who is JWT? I only recognise Virgil Van Dijk. I know the best way to proceed is take one step at a time, so as to not get overwhelmed. </p>
 				</details>
 
 				<details>
@@ -72,7 +72,8 @@
 				<details>
 					<summary>2.1 Simple Web App<span class="icon">👇</span></summary>
 					<p class="subDetails">~ 1 hour</p>
-					<p>While I was at Benfica, I created a simple website like this before, so I will be adapting that for this project too, again on AWS. </p>
+					<p>What is 'simple origin web application'? It doesnt see to have a definition online, so I can only assume I shouldn't be using Cross-Origin Resource Sharing (CORS) for my web app. </p>
+					<p>I created a simple website on AWS before, so for this project I will be adapting that to bring it to new heights. </p>
 				</details>
 				
 				<details>
@@ -82,17 +83,38 @@
 				</details>
 				
 				<details>
-					<summary>3. Front-end automation CI/CD<span class="icon">👇</span></summary>
+					<summary>2.3 Front-end automation CI/CD<span class="icon">👇</span></summary>
 					<p class="subDetails">~ 1 hour</p>
-					<p>Through GitHub Actions, local changes are uploaded to S3 and deployed on AWS and Cloudflare. The time saved can be better used to score more goals. </p>
+					<p>Given the short development timeframe given, it is critical in my opinion to set up CI/CD, to reduce manual effort, for version control, and deliver faster. There are a few options out there such as GitHub Actions, BitBucket, etc, for me, since I have used GitHub Actions before, I will stick to that like sticking to my idol - Virgil Van Dijk. </p>
+					<p>Through GitHub Actions, local changes are uploaded to S3 and deployed on AWS and Cloudflare. With the time saved, I can score more goals! </p>
 				</details>
 				
 				<details>
-					<summary>4. Cloudflare Access<span class="icon">👇</span></summary>
+					<summary>3.1 and 4. Cloudflare Access<span class="icon">👇</span></summary>
 					<p class="subDetails">~ 2 hours</p>
-					<p>I always wanted to integrate my site with a 3rd party identity provider like Facebook, Linkedin, Google etc. It is great that these identity providers support SAML or OIDC. </p>
+					<p>I always wanted to integrate my site with a 3rd party identity provider like Facebook, Linkedin, Google etc, but didn't had the chance (a.k.a. lazy). </p>
+					<p>I settled on Linkedin, since #1 my site is created for professional reasons, and #2 the real reason is I tried following the steps for Facebook but the documentations differed from actual and I couldn't get it to work. </p>
+					<p>I tested Cloudflare Access to limit to my own email address, and it worked, but since I still need my site to be readable for people, I have updated to limit by Country, as long as you can login through a Linkedin account. </p>
 				</details>
 					
+				<details>
+					<summary>3.2 In-App Authentication<span class="icon">👇</span></summary>
+					<p class="subDetails">~ 2 hours</p>
+					<p>I didn't know about JWT, and I tried researching on this topic, but couldn't make much sense of it. I also start to question the duplicated authorisation step since the next step seem to serve a similar purpose. </p>
+					<p>As time is really short, I have no choice but to skip this step. </p>
+				</details>
+				
+				<details>
+					<summary>5. Append New Response Header<span class="icon">👇</span></summary>
+					<p class="subDetails">~ 2 hours</p>
+					<p>With some research, I found the right Javascript that can fit the purpose. I deployed it in Cloudflare Worker, which is service for running serverless functions at the edge. </p>
+					<p>Tested it by inspecting the packets and it worked. Of cause, I'm good at headers. </p>
+				</details>
+				
+				<details>
+					<summary>6. and 7. Future Pipeline<span class="icon">👇</span></summary>
+					<p class="subDetails">~ 2 hours</p>
+					<p>Adapted the code from the unanswered Cloudflare Community question but it just refused to work. I can only leave these 2 tasks for future developments. </p>
 				</details>
 				
 			</div>
