@@ -7,3 +7,5 @@ The additions are:
 1. Using a different CDN (Cloudflare this time)
 2. Login page through Cloudflare Access for authentication and authorisation
 3. A serverless function at the edge to append a response header
+
+How to access? Go to https://darr.win/ and login with your linkedin account!
